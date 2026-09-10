@@ -2,9 +2,9 @@ pipeline {
   agent any
 
   environment {
-    DOCKER_REPO       = "<도커허브ID>/jenkins-project"   // 본인 Docker Hub ID
+    DOCKER_REPO       = "jihoondev1/jenkins-project"   // 본인 Docker Hub ID
     DOCKER_CRED_ID    = "DOCKERHUB_CREDENTIALS"        // Jenkins에 등록한 Docker Hub 자격 증명 ID
-    MANIFEST_REPO_URL = "github.com/<깃허브ID>/jenkins-manifests.git" // https:// 제외한 순수 경로
+    MANIFEST_REPO_URL = "github.com/jihoon-devstu/jenkins-manifests.git" // https:// 제외한 순수 경로
     GIT_CRED_ID       = "GIT_PAT"                      // Jenkins에 등록한 GitHub PAT ID
   }
 
